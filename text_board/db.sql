@@ -13,10 +13,3 @@ CREATE TABLE article (
 	title CHAR(100) NOT NULL,
 	`body` TEXT NOT NULL
 );
-
-#게시물 테스트 케이스
-INSERT INTO article
-SET regDate = NOW(),
-updateDate = NOW(),
-title = CONCAT('제목', RAND()),
-`body` = CONCAT('내용', RAND());
