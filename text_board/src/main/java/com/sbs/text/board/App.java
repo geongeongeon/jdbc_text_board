@@ -21,7 +21,7 @@ public class App {
             System.out.print("명령) ");
             String cmd = sc.nextLine();
 
-            if(cmd.equals(("usr/article/write"))) {
+            if(cmd.equals(("/usr/article/write"))) {
                 System.out.println("== 게시물 작성 ==");
 
                 System.out.print("제목) ");
@@ -97,7 +97,7 @@ public class App {
                 articles.add(article);
 
                 System.out.printf("%d번 게시물이 등록되었습니다.\n", article.id);
-            } else if(cmd.equals("usr/article/list")) {
+            } else if(cmd.equals("/usr/article/list")) {
                 System.out.println("== 게시물 리스트 ==");
 
                 if(articles.isEmpty()) {
@@ -109,7 +109,7 @@ public class App {
                     Article article = articles.get(i);
                     System.out.printf("%d | %s\n", article.id, article.title);
                 }
-            } else if(cmd.equals("exit")) {
+            } else if(cmd.equals("/exit")) {
                 System.out.println("반복문을 종료합니다.");
                 break;
             } else {
